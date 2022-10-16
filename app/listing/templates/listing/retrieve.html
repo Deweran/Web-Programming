@@ -1,0 +1,12 @@
+{% extends 'listing/base.html' %}
+
+{% block content %}
+
+<div class="px-3 py-2 bg-grey-100 rounded-sm">
+    <h3 class="text-3xl text-grey-900"> {{ retrieve.title }} </h3>
+    <p class="text-gray-900"> ${{ retrieve.price }} </p>
+    <p class="text-gray-600 text-sm"> {{ retrieve.address }} </p>
+    <a href="{% url 'listing:listing_list' %}"> Go to list </a>
+</div>
+
+{% endblock content %}
